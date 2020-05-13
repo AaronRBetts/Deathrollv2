@@ -1,6 +1,6 @@
-# Node.js login system with user authentication
+# Deathroll
 
-boilerplate for login/logout systems with authentication and encryption.
+Deathroll web app including login/logout system with authentication and encryption.
 
 ### Packages
 Node.js<br/>
@@ -9,11 +9,7 @@ Passport<br/>
 Mongoose<br/>
 EJS
 
-### Requirements
-Must have MongoDB installed locally
-
-### Usage
-INSTALLATION INSTRUCTIONS COMING SOON
+### INSTALLATION INSTRUCTIONS COMING SOON
 
 
 # Deathrollv2
