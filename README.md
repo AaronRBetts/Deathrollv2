@@ -9,9 +9,13 @@ Passport<br/>
 Mongoose<br/>
 EJS
 
+### Requirements
+Must have MongoDB installed locally
+
 ### Usage
 1) $ npm install
 2) $ npm run start
 3) Visit 'http:localhost:5000' on your preferred browser
 
 For User changes email aaronrbetts@gmail.com
+# Deathrollv2
