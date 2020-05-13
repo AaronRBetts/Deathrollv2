@@ -14,7 +14,7 @@ require('./config/passport')(passport);
 const db = require('./config/keys').mongoURI;
 
 //Connect to MongoDB
-mongoose.connect(db, { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI || db, { useNewUrlParser: true })
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
@@ -47,10 +47,17 @@ app.use((req, res, next) => {
   next();
 })
 
+//serve files from public directory
+app.use("/public", express.static(__dirname + "/public"));
+
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
 const PORT = process.env.PORT || 5000;
+
+if (process.env.NODE_ENV === 'production') {
+
+}
 
 app.listen(PORT, console.log(`Server started on port: ${PORT}`));

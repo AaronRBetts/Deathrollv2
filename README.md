@@ -18,4 +18,7 @@ Must have MongoDB installed locally
 3) Visit 'http:localhost:5000' on your preferred browser
 
 For User changes email aaronrbetts@gmail.com
+
 # Deathrollv2
+
+Deathroll v2 is a continuation of Deathroll with added user authentication and highscore system

@@ -1,0 +1,152 @@
+*{
+    text-align: center;
+}
+
+@keyframes bal-animation {
+    0%   {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100%   {opacity: 0;}
+}
+
+#game-screen{
+    min-width: 50vw;
+}
+
+.game{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.num-change{
+    opacity: 0;
+}
+
+.bal-minus{
+    color: firebrick;
+}
+
+.bal-plus{
+    color: green;
+}
+
+.flash-text{
+    margin-left: 10px;
+    opacity: 0;
+    animation: bal-animation 1s;
+}
+
+.show {
+    -webkit-animation-name: show-element;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.hideElement {
+    -webkit-animation-name: hide-element;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.removed{
+    display: none !important;
+}
+
+@keyframes show-element {
+    from {opacity: 0;
+    }
+    to {
+      opacity: 1;
+      display: initial;
+    }
+}
+
+
+@keyframes hide-element {
+    from {opacity: 1;
+    }
+    to {
+      opacity: 0;
+      display: none !important;
+    }
+}
+
+.button4 {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.card{
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin: 5px;
+}
+
+.button4:hover {
+    border-color: rgba(255,255,255,1);
+}
+
+#game{
+    background: url(/public/assets/bg1.png) rgba(78, 93, 108, 1);
+    background-blend-mode: multiply;
+}
+
+.table-responsive-stack tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+    display: block;
+  /*      
+    flex-grow | flex-shrink | flex-basis   */
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+  
+.table-responsive-stack .table-responsive-stack-thead {
+    font-weight: bold;
+}
+  
+@media screen and (max-width: 768px) {
+    .table-responsive-stack tr {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-bottom: 3px solid #ccc;
+        display:block;
+        
+    }
+     /*  IE9 FIX   */
+     .table-responsive-stack td {
+        float: left\9;
+        width: 100%;
+    }
+}
+
+canvas#balHistoryChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#winningsTable td {
+    width: 50%;
+}
