@@ -9,9 +9,11 @@ Passport<br/>
 Mongoose<br/>
 EJS
 
-### INSTALLATION INSTRUCTIONS COMING SOON
+### INSTALLATION 
+$ npm install <br/>
+$ npm run start
 
 
 # Deathrollv2
 
-Deathroll v2 is a continuation of Deathroll with added user authentication and highscore system
+Deathroll v2 is a continuation of Deathroll with added user authentication
