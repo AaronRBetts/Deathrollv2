@@ -150,3 +150,7 @@ canvas#balHistoryChart {
 #winningsTable td {
     width: 50%;
 }
+
+#welcome-logo {
+    object-fit: contain;
+}
